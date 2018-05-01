@@ -11,7 +11,7 @@ $(document).ready(function () {
      });
 
 function getWeather(search_term) {
-		var url = "http://api.openweathermap.org/data/2.5/weather?q=";
+		var url = "https://api.openweathermap.org/data/2.5/weather?q=";
         var key = "&appid=333c2d80b4f7f8bbe936f0cf6aabafdd";
         $.ajax({
             url: url + search_term + "&units=metric" + key,
