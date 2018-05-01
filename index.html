@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section id="head_sec">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-10 col-md-offset-1">
+    				<div id="search_form">
+    					<form action="" method="POST" role="form">    					
+    						<div class="form-group">
+    							<input type="text" class="form-control" id="search_term" autocomplete="off" placeholder="Input City To Get Weather">
+                                <button type="submit" id="submit_btn" class="btn btn-primary">Submit</button>
+    						</div>
+    						
+
+    					</form>
+    				</div>
+    				<div class="main-weather-data">
+    					<div class="date-day text-center">
+    						<span id="current_day"></span>
+                            <span>|</span>
+    						<span id="current_date">26Apr 2018</span>
+    					</div>
+    					<h1 class="text-center" id="city_name">Singhana</h1> 
+    					<img src="./img/cloudy.svg" id="weather-type-icon" class="img-responsive" alt="Image">
+    					<h4 class="text-center" id="weather_type">STORMY</h4>
+    					<h2 class="text-center" id="current_temp">25°c</h2>
+						<div class="min-max-temp">
+							<div class="min-temp">
+    						<img src="./img/downarrow.png" class="img-responsive" alt="Image">
+    						<span id="min_temp">8°c</span>
+    					</div>
+    					<div class="max-temp">
+    						<img src="./img/uparrow.png" class="img-responsive" alt="Image">
+    						<span id="max_temp">8°c</span>
+    					</div>
+						</div>		
+    				</div>
+    				<div class="divider-line"></div>
+    				<div class="row other-weather-data">
+    					<div class="col-md-4">
+    						<div class="sunrise">
+    							<img src="./img/sunrise.svg" class="img-responsive" alt="">
+    							<h4 class="text-center o-w-data-heading">Sunrise</h4>
+    							<h3 class="text-center o-w-data-value" id="sunrise">3.00 AM</h3>
+    						</div>
+    					</div>
+    					<div class="col-md-4">
+    						<div class="humidity">
+    							<img src="./img/humidity.svg" class="img-responsive" alt="">
+    							<h4 class="text-center o-w-data-heading">Humidity</h4>
+    							<h3 class="text-center o-w-data-value" id="humidity">3.00 AM</h3>
+    						</div>
+    					</div>
+    					<div class="col-md-4">
+    						<div class="airpressure">
+    							<img src="./img/wind.svg" class="img-responsive" alt="">
+    							<h4 class="text-center o-w-data-heading">Wind</h4>
+    							<h3 class="text-center o-w-data-value" id="wind">3.00 AM</h3>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			
+    		</div>
+    	</div>
+    </section>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
