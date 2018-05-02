@@ -53,7 +53,7 @@ function format_time(date_obj) {
         // formats a javascript Date object into a 12h AM/PM time string
         var hour = date_obj.getHours();
         var minute = date_obj.getMinutes();
-        var amPM = (hour > 11) ? "AM" : "PM";
+        var amPM = (hour > 11) ? "PM" : "AM";
         if (hour > 12) {
             hour -= 12;
         } else if (hour == 0) {
